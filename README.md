@@ -4,3 +4,8 @@ Simple Carousel using [React-Slick](https://react-slick.neostack.com/docs/get-st
   - For Small Screens i.e. Mobile, I have Shown Product-Card in two rows and one column.
   - Users can use the **Arrows**, **Dots**  to swipe the Cards to the left or right.
   - Dragging the Cards to the left or right can also be used to swipe.
+    
+@TO-DO
+  - Add Functionality to the buttons
+  - Add Hover Effect to the cards
+  - Add Product Images
