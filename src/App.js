@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
 
 function App() {
   const settings = {
@@ -15,18 +16,9 @@ function App() {
     rows: 2,
     responsive: [
       {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -52,7 +44,7 @@ function App() {
   return (
     <>
       <div className="w-3/4 m-auto">
-        <div className="mt-20">
+        <div className="mt-20 carousel">
           <Slider {...settings}>
             {data.map((d) => (
               <div
@@ -69,7 +61,7 @@ function App() {
                   />
                 </div>
 
-                <div className="flex flex-col items-center justify-center gap-1 p-4">
+                <div className="flex flex-col items-center justify-center gap-1 xl:gap-4 p-4">
                   <p className="text-lg font-semibold">{d.name}</p>
                   <p className="text-center text-sm">{d.review}</p>
                   <button className="bg-indigo-500 text-white text-sm px-6 py-1 rounded-xl">
