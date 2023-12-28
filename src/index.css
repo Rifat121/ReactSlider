@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@layer base {
+  body {
+    background-color: #7fb2a1;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
